@@ -3,25 +3,8 @@
     width: 100vw;
     background-color: #181b23;
     overflow: hidden;
-    @media (min-width: 768px){
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 }
 .containerVirtualized{
-    @media (min-width: 768px){
-        padding: 0 15%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    @media (min-width: 992px){
-        padding: 0 20%;
-    }
-    @media (min-width: 1200px){
-        padding: 0 25%;
-    }
 }
 .elementsWrapper{
     width: 100%;
@@ -33,15 +16,6 @@
     margin-bottom: 16px;
     height: 93.5vh;
     overflow-y: scroll;
-    @media (min-width: 768px){
-        width: 70%;
-    }
-    @media (min-width: 992px){
-        width: 60%;
-    }
-    @media (min-width: 1200px){
-        width: 50%;
-    }
 }
 .oneElement{
     width: 100%;
@@ -117,4 +91,38 @@
     width: 50%;
     height: 50%;
     margin-left: 4px;
+}
+
+@media (min-width: 768px){
+    .containerVirtualized{
+        padding: 0 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .elementsWrapper{
+        width: 70%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 992px){
+    .containerVirtualized{
+        padding: 0 20%;
+    }
+    .elementsWrapper{
+        width: 60%;
+    }
+
+}
+@media (min-width: 1200px){
+    .elementsWrapper{
+        width: 50%;
+    }
+    .containerVirtualized{
+        padding: 0 25%;
+    }
 }

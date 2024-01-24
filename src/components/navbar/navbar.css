@@ -4,12 +4,6 @@
     padding: 16px 16px;
     justify-content: space-between;
     align-items: center;
-    @media (min-width: 768px){
-        width: 100%;
-    }
-    @media (min-width: 1200px){
-        justify-content: space-evenly;
-    }
 }
 .navContainerSimple{
     width: 100vw;
@@ -19,16 +13,6 @@
     align-items: center;
     position: fixed;
     background-color: #181b23;
-    @media (min-width: 768px){
-        width: 70%;
-    }
-    @media (min-width: 992px){
-        width: 60%;
-    }
-    @media (min-width: 1200px){
-        width: 50%;
-        justify-content: space-evenly;
-    }
 }
 .navButtons{
     cursor: pointer;
@@ -43,4 +27,26 @@
 }
 .linkStyle{
     text-decoration: none;
+}
+@media (min-width: 768px){
+    .navContainerSimple{
+        width: 70%;
+    }
+    .navContainer{
+        width: 100%;
+    }
+}
+@media (min-width: 992px){
+    .navContainerSimple{
+        width: 60%;
+    }
+}
+@media (min-width: 1200px){
+    .navContainerSimple{
+        width: 50%;
+        justify-content: space-evenly;
+    }
+    .navContainer{
+        justify-content: space-evenly;
+    }
 }
