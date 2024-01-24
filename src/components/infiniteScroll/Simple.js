@@ -12,7 +12,7 @@ const Simple = () => {
     const [tracks, setTracks] = useState([]);
     const [hasMore, setHasMore] = useState(false);
     const [offset, setOffset] = useState(0);
-    
+
     useEffect(() => {
         fetchData(setIsLoading, setAccessToken, accessToken, setTracks, setOffset, setHasMore);
         updateRecords(setTracks);

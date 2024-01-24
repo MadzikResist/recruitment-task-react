@@ -17,7 +17,7 @@ export const fetchData = async (setIsLoading, setAccessToken, accessToken, setTr
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${accessToken}`,
+                'Authorization': `Bearer ${tokenData.access_token}`,
             },
         });
         const tracksData = await tracksResponse.json();
