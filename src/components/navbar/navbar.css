@@ -1,0 +1,46 @@
+.navContainer{
+    width: 100vw;
+    display: flex;
+    padding: 16px 16px;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: 768px){
+        width: 100%;
+    }
+    @media (min-width: 1200px){
+        justify-content: space-evenly;
+    }
+}
+.navContainerSimple{
+    width: 100vw;
+    display: flex;
+    padding: 16px 16px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #181b23;
+    @media (min-width: 768px){
+        width: 70%;
+    }
+    @media (min-width: 992px){
+        width: 60%;
+    }
+    @media (min-width: 1200px){
+        width: 50%;
+        justify-content: space-evenly;
+    }
+}
+.navButtons{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202530;
+    width: 160px;
+    height: 50px;
+    border-radius: 8px;
+    color: #ea5c47;
+}
+.linkStyle{
+    text-decoration: none;
+}

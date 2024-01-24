@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  scrollbar-width: none;
+  scrollbar-color: #ea5c47 #181b23;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ea5c47;
+  border-radius: 8px;
+  border: 0 none #872c2c;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #181b23;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
